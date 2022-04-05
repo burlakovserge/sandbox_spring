@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5433/fake
+    username: serge
+    password: admin
+    driverClassName: org.postgresql.Driver
+  kafka:
+    bootstrap-servers: localhost:9092
