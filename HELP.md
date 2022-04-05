@@ -1,0 +1,1 @@
+This is my spring project where i'm learning some features like kafka, multimodule architecture, etc. 
