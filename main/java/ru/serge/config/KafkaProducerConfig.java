@@ -1,4 +1,4 @@
-package ru.serge.kafka;
+package ru.serge.config;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;

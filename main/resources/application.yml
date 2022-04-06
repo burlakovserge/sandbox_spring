@@ -1,7 +1,10 @@
+server:
+  port: 8080
+
 spring:
   jpa:
     database: POSTGRESQL
-    show-sql: true
+    show-sql: false
   datasource:
     url: jdbc:postgresql://localhost:5433/fake
     username: serge
@@ -9,3 +12,10 @@ spring:
     driverClassName: org.postgresql.Driver
   kafka:
     bootstrap-servers: localhost:9092
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          google:
+#            client-id: 821128479015-fggiioktjjcdg46d0k4bli9tob2rprvg.apps.googleusercontent.com
+#            client-secret: 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

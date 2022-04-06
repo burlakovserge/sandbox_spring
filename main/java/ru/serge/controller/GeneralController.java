@@ -12,7 +12,6 @@ import ru.serge.repository.AlbumRepository;
 import ru.serge.repository.ArtistRepository;
 
 @RestController
-@RequestMapping("/api")
 @Slf4j
 public class GeneralController {
     private final AlbumRepository albumRepository;
@@ -36,13 +35,13 @@ public class GeneralController {
     }
 
     @DeleteMapping("/artist/{id}")
-    public ResponseEntity deleteArtist(@PathVariable Integer id) {
+    public ResponseEntity deleteArtist(@PathVariable Long id) {
         artistRepository.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @DeleteMapping("/album/{id}")
-    public ResponseEntity deleteAlbum(@PathVariable Integer id) {
+    public ResponseEntity deleteAlbum(@PathVariable Long id) {
         albumRepository.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }

@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import ru.serge.entity.Album;
 
 @Repository
-public interface AlbumRepository extends CrudRepository<Album, Integer> {
+public interface AlbumRepository extends CrudRepository<Album, Long> {
 }
