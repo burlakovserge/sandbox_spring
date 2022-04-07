@@ -11,14 +11,9 @@ import ru.serge.repository.UserRepository;
 
 @Service
 @RequiredArgsConstructor
-public class UserService implements UserDetailsService {
+public class UserService  {
 
     private final UserRepository userRepository;
-
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return userRepository.findByUsername(username);
-    }
 
     public Iterable<User> findAll() {
         return userRepository.findAll();
@@ -26,7 +21,6 @@ public class UserService implements UserDetailsService {
 
     public User setAdmin(Long userId) {
         User user = userRepository.findById(userId).get();
-        user.getRoles().add(Role.ADMIN);
         return userRepository.save(user);
     }
 }

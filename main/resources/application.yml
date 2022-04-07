@@ -12,10 +12,10 @@ spring:
     driverClassName: org.postgresql.Driver
   kafka:
     bootstrap-servers: localhost:9092
-#  security:
-#    oauth2:
-#      client:
-#        registration:
-#          google:
-#            client-id: 821128479015-fggiioktjjcdg46d0k4bli9tob2rprvg.apps.googleusercontent.com
-#            client-secret: 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
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 821128479015-fggiioktjjcdg46d0k4bli9tob2rprvg.apps.googleusercontent.com
+            client-secret: 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
